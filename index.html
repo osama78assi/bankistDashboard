@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="master.css">
+  <link rel="icon" type="image/png" href="logo.png">
+  <title>Bankist</title>
+</head>
+<body data-to="hi">
+  <div class="nav">
+    <div class="container">
+      <h3 class="msg">Log In To Get Started</h3>
+      <img src="logo.png" alt="logo" class="logo">
+      <form class="register">
+        <input type="text" placeholder="user">
+        <input type="text" placeholder="PIN">
+        <input type="submit" value="→">
+      </form>
+    </div>
+  </div>
+  <div class="main">
+    <div class="popup"></div>
+    <div class="main-header">
+      <div class="container">
+        <div class="left">
+          <h2>Current Balance</h2>
+          <span>As Of <span class="history">05/03/2057</span></span>
+        </div>
+          <h1 class="account">0000$</h1>
+      </div>
+    </div>
+    <div class="main-body">
+      <div class="container">
+        <div class="left">
+          <div class="movment">
+            <div>
+              <span class="type green"><span>2</span> DEPOSIT</span>
+              <span class="history">3 Days Ago</span>
+            </div>
+            <span class="money">4 000$</span>
+          </div>
+          <div class="movment">
+            <div>
+              <span class="type green"><span>2</span> DEPOSIT</span>
+              <span class="history">3 Days Ago</span>
+            </div>
+            <span class="money">4 000$</span>
+          </div>
+        </div>
+        <div class="right">
+          <div class="control yellow">
+            <h3>Transfer money</h3>
+            <form class="control-form transfer">
+              <div class="input-group">
+                <input type="text" id="tran-to">
+                <label for="tran-to">Transfer to</label>
+              </div>
+              <div class="input-group">
+                <input type="number" id="tran-amount">
+                <label for="tran-amount">Amount</label>
+              </div>
+              <input type="submit" value="→" style="background-color: #fff;">
+            </form>
+          </div>
+          <div class="control green">
+            <h3>Request Loan</h3>
+            <form class="control-form loan">
+              <div class="input-group">
+                <input type="number" id="ask-for">
+                <label for="ask-for">Amount</label>
+              </div>
+              <input type="submit" value="→" style="background-color: #fff;">
+            </form>
+          </div>
+          <div class="control red">
+            <h3>Close Account</h3>
+            <form class="control-form close">
+              <div class="input-group">
+                <input type="text" id="user">
+                <label for="user">Confrim User</label>
+              </div>
+              <div class="input-group">
+                <input type="text" id="pin">
+                <label for="pin">Confrim PIN</label>
+              </div>
+              <input type="submit" value="→" style="background-color: #fff;">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="main-footer">
+        <div class="container">
+          <div class="left">
+            <div class="mr cash-in"><span>IN</span><span class="cash-val f-green">0000$</span></div>
+            <div class="mr cash-out"><span>OUT</span><span class="cash-val f-red">0000$</span></div>
+            <div class="mr cash-interest"><span>INTEREST</span><span class="cash-val f-green">0000$</span></div>
+            <button class="sort">&downarrow; SORT</button>
+          </div>
+          <div class="right-footer">You Will Be Logged Out In <span class="time">05:00</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
